@@ -5,8 +5,9 @@ MakeCshared is a package that introduce how to build self-make C shared library 
 ## Development Environment
 
 * Julia 0.7.0 on Fedora 28 (4.18.9-200 on x86_64)
+* Julia 1.0.0 on Fedora 28 (4.18.9-200 on x86_64)
 
-The reason is that `BinaryBuilder.jl` and `BinaryProvider.jl` could not install on Julia 1.0.0 and 1.1-DEV on F28. On Julia 0.7.0, `BinaryProvidir.jl` is installed. (`BinaryBuiler.jl` could not installed.)  
+The reason is that `BinaryBuilder.jl` and `BinaryProvider.jl` could not install on Julia 1.1-DEV on F28. On Julia 0.7.0 and 1.0.0, `BinaryProvidir.jl` is installed. (`BinaryBuiler.jl` could not installed.)  
 
 ## About C Expansion Code
 Refer to [here](https://github.com/mkatase/JuliaPractice) for more information about build and check.
@@ -38,6 +39,45 @@ Hash Value outputs using `sha256sum` command.
 ```bash
 $ sha256sum libmakec.tar.gz
 6204d89072dcf42daf8f9014a052f2149492fa2e76b47f9351faa2db53d14f50  libmakec.tar.gz
+```
+
+## How to install
+
+```julia
+(v0.7) pkg> add https://github.com/mkatase/MakeCshared.jl.git
+...
+(v0.7) pkg> build MakeCshared
+  Building CMake ──────→ `~/.julia/packages/CMake/yag1A/deps/build.log`
+  Building MakeCshared → `~/.julia/packages/MakeCshared/KA7V1/deps/build.log`
+
+(v0.7) pkg> test MakeCshared
+   Testing MakeCshared
+...
+# printout function check
+Hello C World !!
+# calc function check
+# hello function check
+Test Summary: | Pass  Total
+MakeCshared   |    6      6
+   Testing MakeCshared tests passed 
+```
+
+## Usage
+
+```julia
+julia> using MakeCshared
+
+julia> printout
+printout (generic function with 1 method)
+
+julia> printout()
+Hello C World !!
+
+julia> calc(5)
+25
+
+julia> hello("Hoe")
+"Hello Hoe World !!"
 ```
 
 ## Result of Travis CI
