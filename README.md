@@ -39,3 +39,16 @@ Hash Value outputs using `sha256sum` command.
 $ sha256sum libmakec.tar.gz
 6204d89072dcf42daf8f9014a052f2149492fa2e76b47f9351faa2db53d14f50  libmakec.tar.gz
 ```
+
+## Result of Travis CI
+As of 2018-10-01:
+
+|Version|OS|Status|
+|:-----:|:--:|:------:|
+|0.7.0|Linux|Pass|
+|1.0.0|Linux|Pass|
+|1.1.0|Linux|Pass|
+|0.7.0|Mac|Pass|
+|1.0.0|Mac|Fail|
+|1.1.0|Mac|Pass|
+
