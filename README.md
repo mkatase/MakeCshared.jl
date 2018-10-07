@@ -101,4 +101,3 @@ julia> hello("Hoe")
 Refer to the following. Thanks.
 
 * [NLopt.jl](https://github.com/JuliaOpt/NLopt.jl)
-
