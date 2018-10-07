@@ -1,13 +1,16 @@
 # MakeCshared
 
+[![Build Status](https://travis-ci.org/mkatase/MakeCshared.jl.svg?branch=master)](https://travis-ci.org/mkatase/MakeCshared.jl)
+[![codecov](https://codecov.io/gh/mkatase/MakeCshared.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/mkatase/MakeCshared.jl)
+
 MakeCshared is a package that introduce how to build self-make C shared library and package.
 
 ## Development Environment
 
-* Julia 0.7.0 on Fedora 28 (4.18.9-200 on x86_64)
-* Julia 1.0.0 on Fedora 28 (4.18.9-200 on x86_64)
+* Julia 0.7.0 on Fedora 28 (4.18.11-200 on x86_64)
+* Julia 1.0.1 on Fedora 28 (4.18.11-200 on x86_64)
 
-The reason is that `BinaryBuilder.jl` and `BinaryProvider.jl` could not install on Julia 1.1-DEV on F28. On Julia 0.7.0 and 1.0.0, `BinaryProvidir.jl` is installed. (`BinaryBuiler.jl` could not installed.)  
+The reason is that `BinaryBuilder.jl` and `BinaryProvider.jl` could not install on Julia 1.1-DEV on F28. On Julia 0.7.0 and 1.0.1, `BinaryProvidir.jl` is installed. (`BinaryBuiler.jl` could not installed.)  
 
 ## About C Expansion Code
 Refer to [here](https://github.com/mkatase/JuliaPractice) for more information about build and check.
@@ -38,7 +41,7 @@ Hash code outputs using `sha256sum` command.
 
 ```bash
 $ sha256sum libmakec.tar.gz
-6204d89072dcf42daf8f9014a052f2149492fa2e76b47f9351faa2db53d14f50  libmakec.tar.gz
+c650c7b0413e26b807e681b7f48c7fa77cdae14e45c37005d768351a4d18a803 libmakec.tar.gz
 ```
 
 ## Description about deps directory

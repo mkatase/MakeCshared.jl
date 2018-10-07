@@ -8,7 +8,7 @@ products = [
 ]
 
 src_url  = "https://mkatase.github.io/github-hosted/data/libmakec.tar.gz"
-src_hash = "6204d89072dcf42daf8f9014a052f2149492fa2e76b47f9351faa2db53d14f50"
+src_hash = "c650c7b0413e26b807e681b7f48c7fa77cdae14e45c37005d768351a4d18a803"
 
 src_path = joinpath(prefix, "downloads", "libmakec.tar.gz")
 

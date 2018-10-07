@@ -1,7 +1,7 @@
 name = "MakeCshared"
 uuid = "be70d762-c49f-11e8-2b38-af5bd998a1d4"
 authors = ["mkatase <michimoto.katase@gmail.com>"]
-version = "0.1.0"
+version = "0.1.1"
 
 [deps]
 BinaryProvider = "b99e7846-7c00-51b0-8f62-c81ae34c0232"
