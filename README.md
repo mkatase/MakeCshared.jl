@@ -7,8 +7,8 @@ MakeCshared is a package that introduce how to build self-make C shared library 
 
 ## Development Environment
 
-* Julia 1.1.0 on Fedora 30 (5.0.11-300 on x86_64)
-* clang 8.0.0 on Fedora 30 (5.0.11-300 on x86_64)
+* Julia 1.2.0 on Fedora 31 (5.3.7-301 on x86_64)
+* clang 9.0.0 on Fedora 31 (5.3.7-301 on x86_64)
 
 ## About C Expansion Code
 Refer to [here](https://github.com/mkatase/JuliaPractice) for more information about build and check.
